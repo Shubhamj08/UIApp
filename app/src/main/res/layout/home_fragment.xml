@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/profile_card"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="#e74c3c"
+            android:alpha="0.9"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="60dp"
+                android:paddingTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="73dp"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/list_profile" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/list_fonts"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Profile" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="#1ABC9C"
+            android:alpha="1"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="60dp"
+                android:paddingTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="73dp"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/list_music" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:text="Music"
+                    style="@style/list_fonts" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="#9B59B6"
+            android:alpha="1"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="60dp"
+                android:paddingTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="73dp"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/list_sports" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:text="Sports"
+                    style="@style/list_fonts" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="#C0392B"
+            android:alpha="0.9"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="73dp"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/list_academics" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:text="Academics"
+                    style="@style/list_fonts" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="#008080"
+            android:alpha="0.9"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="50dp"
+                android:paddingTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="73dp"
+                    android:layout_height="89dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_settings" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:text="Settings"
+                    style="@style/list_fonts" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</ScrollView>
+
+</layout>
