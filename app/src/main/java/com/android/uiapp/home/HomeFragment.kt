@@ -25,6 +25,13 @@ class HomeFragment : Fragment() {
             )
         }
 
+        binding.toolsCard.setOnClickListener {
+            this.findNavController().navigate(
+                HomeFragmentDirections
+                    .actionHomeFragmentToToolsFragment()
+            )
+        }
+
         return binding.root
     }
 

@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_toolsFragment"
+            app:destination="@id/toolsFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.android.uiapp.profile.ProfileFragment"
         android:label="ProfileFragment"
         tools:layout="@layout/profile_fragment"/>
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="com.android.uiapp.tools.ToolsFragment"
+        android:label="ToolsFragment"
+        tools:layout="@layout/tools_fragment"/>
 </navigation>
