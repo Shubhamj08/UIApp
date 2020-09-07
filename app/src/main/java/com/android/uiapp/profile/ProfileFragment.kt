@@ -16,10 +16,6 @@ class ProfileFragment : Fragment() {
     ): View? {
         val binding: ProfileFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.profile_fragment, container, false)
 
-        (activity as AppCompatActivity).setSupportActionBar(binding.profileNavBar)
-
-        setHasOptionsMenu(true)
-
         return binding.root
     }
 

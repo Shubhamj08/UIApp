@@ -3,6 +3,8 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/aclonica</item>
         <item>@font/architects_daughter</item>
+        <item>@font/cairo_extralight</item>
+        <item>@font/cairo_semibold</item>
         <item>@font/montserrat</item>
         <item>@font/prosto_one</item>
     </array>
