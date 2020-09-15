@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">UIApp</string>
+
+
+    <!-- Label Class -->
+    <string name="label_off">0</string>
+    <string name="label_low">1</string>
+    <string name="label_medium">2</string>
+    <string name="label_high">3</string>
 </resources>

@@ -83,6 +83,8 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/custom_view_card"
+            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             app:cardBackgroundColor="#9B59B6"
@@ -95,7 +97,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="center_vertical"
-                android:paddingStart="60dp"
+                android:paddingStart="10dp"
                 android:paddingTop="10dp">
 
                 <androidx.appcompat.widget.AppCompatImageView
@@ -103,12 +105,12 @@
                     android:layout_height="89dp"
                     android:layout_marginStart="40dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/list_sports" />
+                    android:src="@drawable/custom_view" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="20dp"
-                    android:text="Sports"
+                    android:text="Custom View"
                     style="@style/list_fonts" />
             </LinearLayout>
 

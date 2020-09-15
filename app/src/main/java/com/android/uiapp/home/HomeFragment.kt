@@ -32,6 +32,13 @@ class HomeFragment : Fragment() {
             )
         }
 
+        binding.customViewCard.setOnClickListener {
+            this.findNavController().navigate(
+                HomeFragmentDirections
+                    .actionHomeFragmentToCustomViewFragment()
+            )
+        }
+
         return binding.root
     }
 

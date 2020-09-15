@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_homeFragment_to_toolsFragment"
             app:destination="@id/toolsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_customViewFragment"
+            app:destination="@id/customViewFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -27,4 +30,9 @@
         android:name="com.android.uiapp.tools.ToolsFragment"
         android:label="ToolsFragment"
         tools:layout="@layout/tools_fragment"/>
+    <fragment
+        android:id="@+id/customViewFragment"
+        android:name="com.android.uiapp.custom_view.CustomViewFragment"
+        android:label="custom_view_fragment"
+        tools:layout="@layout/custom_view_fragment" />
 </navigation>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyCustomView">
+        <attr name="labelColor1" format="color" />
+        <attr name="labelColor2" format="color" />
+        <attr name="labelColor3" format="color" />
+    </declare-styleable>
+</resources>
