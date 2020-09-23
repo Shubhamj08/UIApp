@@ -19,6 +19,9 @@
         <action
             android:id="@+id/action_homeFragment_to_customViewFragment"
             app:destination="@id/customViewFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_animationsFragment"
+            app:destination="@id/animationsFragment" />
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
@@ -35,4 +38,9 @@
         android:name="com.android.uiapp.custom_view.CustomViewFragment"
         android:label="custom_view_fragment"
         tools:layout="@layout/custom_view_fragment" />
+    <fragment
+        android:id="@+id/animationsFragment"
+        android:name="com.android.uiapp.animations.AnimationsFragment"
+        android:label="animations_fragment"
+        tools:layout="@layout/animations_fragment" />
 </navigation>

@@ -4,4 +4,10 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="colorOnPrimary">#FFFFFF</color>
+
+    <color name="layer1">#10CCCCCC</color>
+    <color name="layer2">#20CCCCCC</color>
+    <color name="layer3">#40CCCCCC</color>
+    <color name="layer4">#50CCCCCC</color>
+    <color name="layer5">#60CCCCCC</color>
 </resources>

@@ -5,7 +5,9 @@ import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
+import androidx.core.content.ContextCompat
 import androidx.core.content.withStyledAttributes
+import kotlinx.android.synthetic.main.custom_view_fragment.view.*
 import kotlin.math.cos
 import kotlin.math.min
 import kotlin.math.sin
@@ -48,6 +50,9 @@ class MyCustomView @JvmOverloads constructor(
         typeface = Typeface.create("", Typeface.BOLD)
     }
 
+    private val shadowBlur = BlurMaskFilter(5F, BlurMaskFilter.Blur.NORMAL)
+
+
     init {
         isClickable = true
 
@@ -82,6 +87,18 @@ class MyCustomView @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
 
+        paint.maskFilter = shadowBlur
+        paint.color = context.getColor(R.color.layer1)
+        canvas?.drawCircle((width/2).toFloat(), (height/2).toFloat(), radius + 30, paint)
+        paint.color = context.getColor(R.color.layer2)
+        canvas?.drawCircle((width/2).toFloat(), (height/2).toFloat(), radius + 25, paint)
+        paint.color = context.getColor(R.color.layer3)
+        canvas?.drawCircle((width/2).toFloat(), (height/2).toFloat(), radius + 20, paint)
+        paint.color = context.getColor(R.color.layer4)
+        canvas?.drawCircle((width/2).toFloat(), (height/2).toFloat(), radius + 15, paint)
+        paint.color = context.getColor(R.color.layer5)
+        canvas?.drawCircle((width/2).toFloat(), (height/2).toFloat(), radius + 10, paint)
+
         paint.color = when(currentPos){
             LabelClass.OFF -> Color.GRAY
             LabelClass.LOW -> labelLowColor
@@ -89,7 +106,7 @@ class MyCustomView @JvmOverloads constructor(
             LabelClass.HIGH -> labelMaxColor
         }
 
-
+        paint.maskFilter = null
         canvas?.drawCircle((width/2).toFloat(), (height/2).toFloat(), radius, paint)
 
         val markerRadius = radius + RADIUS_OFFSET_INDICATOR
@@ -104,4 +121,5 @@ class MyCustomView @JvmOverloads constructor(
             canvas?.drawText(label, pointPosition.x, pointPosition.y, paint)
         }
     }
+
 }

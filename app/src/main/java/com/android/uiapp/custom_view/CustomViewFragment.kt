@@ -24,6 +24,7 @@ class CustomViewFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         return inflater.inflate(R.layout.custom_view_fragment, container, false)
     }
 

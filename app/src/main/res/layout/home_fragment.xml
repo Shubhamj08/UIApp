@@ -117,6 +117,7 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/animations_card_view"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             app:cardBackgroundColor="#C0392B"
@@ -129,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_gravity="center_vertical"
-                android:paddingStart="30dp"
+                android:paddingStart="20dp"
                 android:paddingTop="10dp">
 
                 <androidx.appcompat.widget.AppCompatImageView
@@ -137,12 +138,12 @@
                     android:layout_height="89dp"
                     android:layout_marginStart="40dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/list_academics" />
+                    android:src="@drawable/list_animations" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_gravity="center_vertical"
                     android:layout_marginStart="20dp"
-                    android:text="Academics"
+                    android:text="Animations"
                     style="@style/list_fonts" />
             </LinearLayout>
 

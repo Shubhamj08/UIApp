@@ -39,6 +39,13 @@ class HomeFragment : Fragment() {
             )
         }
 
+        binding.animationsCardView.setOnClickListener {
+            this.findNavController().navigate(
+                HomeFragmentDirections
+                    .actionHomeFragmentToAnimationsFragment()
+            )
+        }
+
         return binding.root
     }
 
